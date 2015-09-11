@@ -1,0 +1,29 @@
+float chapi= 255;
+float dis = 40;
+int noemi= 4;
+
+
+void setup(){
+  size (1080,720);
+}
+
+void draw (){
+  //antes de la figura viene el if
+  chapi= chapi-1;
+  if (chapi > 255 || chapi< 0){
+    chapi =chapi*200;
+  }
+  
+  for (int uno=0; uno < height; uno= uno+150){
+  for (int dos=0; dos < height; dos= dos+150){
+   noStroke ();
+    fill(random(240,50), random(80,10), random(100,240));
+    ellipse (mouseX, mouseY, 100,100);
+  }
+}
+
+
+
+
+//final
+}
